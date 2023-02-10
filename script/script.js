@@ -9,6 +9,17 @@ console.log(document);
 console.log(document.getElementsByTagName("section"));
 console.log(document.getElementById("plaaces-id-1"));
 console.log(document.getElementsByClassName("places"));
-console.log(document.querySelector("places"));
-console.log(document.querySelector("places"));
+console.log(document.querySelectorAll(".places"));
+console.log(document.querySelector(".places"));
+console.log(document.querySelector("#plaaces-id-1"));
 console.log(document.querySelector("section"));
+// selection atribute class id  event img 
+console.log(document.getElementById("plaaces-id-2").getAttribute('class'));
+//style in js dom
+
+const first_section=document.getElementById("plaaces-id-1");
+heading.style.backgroundColor="yellow";
+
+
+
+
