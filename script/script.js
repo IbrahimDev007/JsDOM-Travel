@@ -31,19 +31,19 @@ const items=["item-1","item-2","item-3","item-4"];
 
 for (let  itemtext of items) {
     const list=document.createElement("li");
-    list.setAttribute('id',itemtext);
+    list.setAttribute('class',itemtext);
     list.innerText=itemtext;
     
     lists.appendChild(list);
 }
 first_section.appendChild(lists);
 //remove child
-let removeItem = document.getElementById('item-3')
-removeItem.remove(removeItem);
+// let removeItem = document.getElementById('item-3')
+// removeItem.remove();
 //remove class
 
-// let removeItem = document.getElementsByClassName('item-3')
-// removeItem.remove(removeItem);
+let removeItem = document.getElementsByClassName('item-3')
+removeItem[0].remove();
 
 
 
