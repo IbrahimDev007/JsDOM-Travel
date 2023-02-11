@@ -31,7 +31,7 @@ const items=["item-1","item-2","item-3","item-4"];
 
 for (let  itemtext of items) {
     const list=document.createElement("li");
-    list.setAttribute('class',itemtext);
+    list.setAttribute('id',itemtext);
     list.innerText=itemtext;
     
     lists.appendChild(list);
@@ -39,8 +39,14 @@ for (let  itemtext of items) {
 first_section.appendChild(lists);
 //remove child
 let removeItem = document.getElementById('item-3')
-let parent = removeItem.parentNode
-parent.removeChild(remove);
+removeItem.remove(removeItem);
+//remove class
+
+// let removeItem = document.getElementsByClassName('item-3')
+// removeItem.remove(removeItem);
+
+
+
 
 
 
