@@ -18,7 +18,29 @@ console.log(document.getElementById("plaaces-id-2").getAttribute('class'));
 //style in js dom
 
 const first_section=document.getElementById("plaaces-id-1");
-heading.style.backgroundColor="yellow";
+first_section.style.color="yellow";
+
+//create add remove element by js dom
+ const header =document.createElement("h3");
+ header.innerText="This is added by js dom";
+ first_section.appendChild(header);
+
+let lists =document.createElement("ul");
+
+const items=["item-1","item-2","item-3","item-4"];
+
+for (let  itemtext of items) {
+    const list=document.createElement("li");
+    list.setAttribute('class',itemtext);
+    list.innerText=itemtext;
+    
+    lists.appendChild(list);
+}
+first_section.appendChild(lists);
+//remove child
+let removeItem = document.getElementById('item-3')
+let parent = removeItem.parentNode
+parent.removeChild(remove);
 
 
 
